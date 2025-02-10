@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Copy the PHP file to the webroot
+cp joke.php /var/www/html/
+
+# Optional: Set correct file permissions (important!)
+chown apache:apache /var/www/html/joke.php  # Replace apache:apache if your webserver user/group is different
+chmod 644 /var/www/html/joke.php
+
+# You can add other build steps here if needed
